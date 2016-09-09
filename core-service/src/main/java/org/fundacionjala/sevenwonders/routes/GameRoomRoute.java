@@ -4,14 +4,9 @@
  */
 package org.fundacionjala.sevenwonders.routes;
 
-<<<<<<< HEAD
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
-=======
-import org.apache.camel.BeanInject;
->>>>>>> (Cross-Origin Request Blocked) fixed
 import org.apache.camel.spring.SpringRouteBuilder;
-import org.fundacionjala.sevenwonders.beans.GameRoomService;
 import org.fundacionjala.sevenwonders.core.GameRoom;
 import org.fundacionjala.sevenwonders.core.Player;
 import org.fundacionjala.sevenwonders.core.rest.GameRoomModel;
@@ -27,10 +22,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class GameRoomRoute extends SpringRouteBuilder {
-    
-   @BeanInject("gameRoomService")
-   GameRoomService gameRoomService;
-   
+
     @Override
     public void configure() throws Exception {
         

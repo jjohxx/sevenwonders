@@ -41,7 +41,7 @@ angular.
                         });
                 };
                 this.validateGame = function (game) {
-                    var indexGame = self.games.findIndex(b => b.roomName == game.roomName);
+                    var indexGame = self.games.findIndex(function (b){b.roomName == game.roomName});
                     if (indexGame != -1) {
                         self.games.splice(indexGame, 1);
                     } else {
